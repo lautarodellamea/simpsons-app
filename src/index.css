@@ -1,0 +1,191 @@
+:root {
+  --font-family: "Passero One", sans-serif;
+  --first-color: #0f172a;
+  --second-color: #38bdf8;
+  --white-color: #fff;
+  --black-color: #000;
+  --green-color: #00ff80;
+  --red-color: #ff0062;
+  --pink-color: #ff52ad;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.title-app {
+  font-size: 2.5rem;
+}
+
+.subtitle-app {
+  margin: 1rem 0;
+}
+
+.subtitle-app span {
+  color: var(--second-color);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 350px;
+  padding: 1rem;
+}
+.card img {
+  width: 100%;
+  max-height: 340px;
+  filter: drop-shadow(5px 5px 10px #00000054);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+  width: 100%;
+  margin: auto;
+}
+
+.puntaje {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.data-character {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  max-width: 800px;
+}
+.data-character div {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 0.3rem;
+}
+.data-character .data-p {
+  font-size: 1.3rem;
+  text-align: start;
+  text-align: center;
+}
+.data-character span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--second-color);
+}
+
+.won {
+  font-size: 2.5rem;
+  color: var(--green-color);
+  font-weight: 600;
+}
+.lost {
+  font-size: 2.5rem;
+  color: var(--red-color);
+  font-weight: 600;
+}
+
+.button {
+  align-items: center;
+  background-color: var(--second-color);
+  border: 0;
+  border-radius: 4px;
+  color: var(--white-color);
+  display: flex;
+  font-family: "Passero One", sans-serif;
+  font-size: 1.4rem;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 0.2rem 2rem;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button:active,
+.button:hover {
+  outline: 0;
+  background-color: var(--pink-color);
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.menu {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.button-menu {
+  background-color: transparent;
+  border: 1px solid var(--second-color);
+  width: 210px;
+}
+.button-menu:hover {
+  background-color: var(--second-color);
+}
+
+.error {
+  color: var(--red-color);
+  font-size: 2rem;
+}
+
+
+footer{
+  margin-top: 10rem;
+}
+.brand-name {
+  background: linear-gradient(to right, #38bdf8, #1266d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1200px) {
+}
