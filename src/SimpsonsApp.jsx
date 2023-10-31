@@ -40,7 +40,7 @@ export const SimpsonsApp = () => {
         Adivina el <span>personaje</span>
       </h2>
 
-      {error && <p className="error">Ocurrió un error en la carga de datos, comuníquese con el propietario de la aplicación, disculpe las molestias.</p>}
+      {error && <p className="error">Ocurrió un error en la carga de datos, por favor verifique su conexión a internet y recargue la pagina, si el problema persiste comuníquese con el propietario de la aplicación, disculpe las molestias.</p>}
 
       {loading ? (
         <div>Cargando...</div>
